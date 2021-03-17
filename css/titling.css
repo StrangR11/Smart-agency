@@ -1,0 +1,88 @@
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.94;
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 600;
+  padding-top: 140px;
+  color: #626262;
+}
+
+.title span {
+  margin-right: 10px;
+  color: #fc6744;
+}
+
+@media (max-width: 1151px) {
+  .title {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 769px) {
+  .title {
+    font-size: 28px;
+    line-height: 35px;
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 505px) {
+  .title {
+    font-size: 21px;
+    padding-top: 60px;
+  }
+}
+
+.subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0.65;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  padding-top: 26px;
+  color: #000000;
+}
+
+@media (max-width: 1151px) {
+  .subtitle {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 769px) {
+  .subtitle {
+    font-size: 10px;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 505px) {
+  .subtitle {
+    font-size: 8px;
+    padding-top: 10px;
+  }
+}
