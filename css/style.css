@@ -38,6 +38,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -94,16 +97,13 @@
   }
 }
 
-.home__burger span:last-child {
-  margin: 0;
-}
-
 .home__form {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 372px;
   height: 388px;
+  border-radius: 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
           box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
@@ -390,6 +390,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 3px;
   width: 262px;
   height: 263px;
   background-color: #f5350abe;
@@ -479,18 +480,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.95;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 25px;
-  font-weight: 400;
-  color: #000000;
+  color: #0c0c0c;
   width: 228px;
   height: 55px;
-  background-color: #ffffff;
+  background-color: #e7e7e7;
   -webkit-box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
           box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
   border-radius: 27px;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
 }
 
 @media (max-width: 769px) {
@@ -519,6 +521,10 @@
     width: 10px;
     height: 10px;
   }
+}
+
+.working__button:hover {
+  background-color: #ffc9b4;
 }
 
 .featured {
@@ -558,6 +564,7 @@
   margin: 0 10px 30px 10px;
   background-color: #f86b4c;
   border: 1px solid #ff7d0486;
+  border-radius: 3px;
 }
 
 @media (max-width: 900px) {
@@ -626,12 +633,21 @@
 }
 
 .services__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
   position: relative;
   width: 104px;
   height: 92px;
   margin-bottom: 7px;
-  background-color: #fbfbfb;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
           box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
 }
@@ -650,7 +666,7 @@
 }
 
 .services__icon:hover {
-  background-color: #ffffff;
+  background-color: #ffdbcb81;
 }
 
 @media (max-width: 769px) {
@@ -768,7 +784,7 @@
   color: #000000;
   width: 240px;
   height: 57px;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   -webkit-box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
           box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
   border: 1px solid rgba(1, 2, 2, 0.06);
@@ -856,12 +872,15 @@
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 608px) {
   .team__people {
     margin-top: 80px;
   }
   .team__people:first-child {
     margin-top: 0;
+  }
+  .team__people:nth-child(2) {
+    margin-top: 80px;
   }
 }
 
@@ -882,7 +901,8 @@
   font-family: "Open Sans", sans-serif;
   width: 262px;
   height: 95px;
-  background-color: #ffffff;
+  background-color: #eeeeee;
+  border: 1px solid #e6e6e6;
   -webkit-box-shadow: 1px 6px 16px 0px rgba(20, 20, 21, 0.07);
           box-shadow: 1px 6px 16px 0px rgba(20, 20, 21, 0.07);
   -webkit-transition: 1s;
@@ -1342,13 +1362,13 @@
   width: 240px;
   height: 57px;
   margin-bottom: 45px;
-  background-color: #fdfdfd;
+  background-color: #eeeeee;
   border: 1px solid rgba(1, 2, 2, 0.06);
   -webkit-box-shadow: 2px 11px 20px -1px rgba(20, 20, 21, 0.07);
           box-shadow: 2px 11px 20px -1px rgba(20, 20, 21, 0.07);
   border-radius: 27px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 25px;
   font-weight: 400;
   color: #000000;
@@ -1360,6 +1380,14 @@
     height: 45px;
     margin-bottom: 25px;
   }
+}
+
+.footer__button:hover {
+  background-color: #ff6e47;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  font-size: 16px;
 }
 
 .footer__contact {

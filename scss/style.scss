@@ -26,6 +26,7 @@
 		&__header {
             padding-top: 80px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
 		}
 
@@ -65,9 +66,6 @@
                     width: 28px;
                     height: 4px;
                 }
-                &:last-child {
-                    margin: 0;
-                }
             }
 		}
 
@@ -77,6 +75,7 @@
             left: 0;
             width: 372px;
             height: 388px;
+            border-radius: 4px;
             background-color: #ffffff;
             box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
             border-radius: 2px;
@@ -228,6 +227,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            border-radius: 3px;
             width: 262px;
             height: 263px;
             background-color: #f5350abe;
@@ -285,17 +285,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            opacity: 0.95;
             font-family: "Open Sans", sans-serif;
             font-size: 16px;
             line-height: 25px;
-            font-weight: 400;
-            color: #000000;
+            color: #0c0c0c;
             width: 228px;
             height: 55px;
-            background-color: #ffffff;
+            background-color: #e7e7e7;
             box-shadow: 0px 0px 14px 0px rgba(20,20,21,0.05);
             border-radius: 27px;
+            transition: 0.8s;
             @media (max-width: 769px){
                 width: 190px;
                 height: 45px;
@@ -313,6 +312,9 @@
                     width: 10px;
                     height: 10px; 
                 }
+            }
+            &:hover {
+                background-color: #ffc9b4;
             }
         }
 }
@@ -337,6 +339,7 @@
         margin: 0 10px 30px 10px;
         background-color: #f86b4c;
         border: 1px solid #ff7d0486;
+        border-radius: 3px;
         @media (max-width: 900px){
             width: 250px;
             height: 258px;   
@@ -376,12 +379,15 @@
         }
     }
     &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
         position: relative;
         width: 104px;
         height: 92px;
         margin-bottom: 7px;
-        background-color: #fbfbfb;
+        background-color: #ffffff;
         box-shadow: 0px 0px 36px 0px rgba(20,20,21,0.2);
         & img {
            position: absolute;
@@ -393,7 +399,7 @@
            }
         }
         &:hover {
-            background-color: #ffffff;
+            background-color: #ffdbcb81;
         }
         @media (max-width: 769px){
             margin-bottom: 29px;
@@ -471,7 +477,7 @@
         color: #000000;
         width: 240px;
         height: 57px;
-        background-color: #ffffff;
+        background-color: #eeeeee;
         box-shadow: 0px 0px 14px 0px rgba(20,20,21,0.05);
         border: 1px solid rgba(1,2,2,0.06);
         border-radius: 27px;
@@ -529,11 +535,14 @@
                 margin-top: 80px;
             }
         }
-        @media (max-width: 599px){
+        @media (max-width: 608px){
             margin-top: 80px;
             &:first-child {
                 margin-top: 0;
             } 
+            &:nth-child(2) {
+                margin-top: 80px;
+            }
         }
     }
 
@@ -547,7 +556,8 @@
         font-family: "Open Sans", sans-serif;
         width: 262px;
         height: 95px;
-        background-color: #ffffff;
+        background-color: #eeeeee;
+        border: 1px solid #e6e6e6;
         box-shadow: 1px 6px 16px 0px rgba(20,20,21,0.07);
         transition: 1s;
         @media (max-width: 1151px){
@@ -847,12 +857,12 @@
         width: 240px;
         height: 57px;
         margin-bottom: 45px;
-        background-color: #fdfdfd;
+        background-color: #eeeeee;
         border: 1px solid rgba(1,2,2,0.06);
         box-shadow: 2px 11px 20px -1px rgba(20,20,21,0.07);
         border-radius: 27px;
         font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
+        font-size: 19px;
         line-height: 25px;
         font-weight: 400;
         color: #000000;
@@ -860,6 +870,11 @@
             width: 200px;
             height: 45px;
             margin-bottom: 25px;
+        }
+        &:hover {
+            background-color: #ff6e47;
+            transition: 1s;
+            font-size: 16px;
         }
     }
 

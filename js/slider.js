@@ -69,7 +69,7 @@ new Swiper('.clients__slider', {
 
 	observer: true,
 	observeParents: true,
-	slidesPerView: 3,
+	slidesPerView: 1,
 	spaceBetween: 30,
 	autoHeight: true,
 	speed: 1100,
